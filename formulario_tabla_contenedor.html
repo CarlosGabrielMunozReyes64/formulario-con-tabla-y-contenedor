@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario tabla contenedor HTML</title>
+</head>
+<body>
+    <div>
+        <center>
+             <h1>Registro de usuario</h1>
+             <br>
+             <table border="1px">
+                <tr>
+                    <td>nombre</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>correo electronico</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>contraseña</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>genero</td>
+                    <td>
+                        <form>
+                            <label>
+                                <input type="radio" name="masculino" value="masculino">
+                                masculino
+                            </label>
+                            <label>
+                                <input type="radio" name="femenino" value="femenino">
+                                femenino
+                            </label>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ciudad</td>
+                    <td>
+                        <select name="ciudad" id="ciudad">
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Medellín">Medellín</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Cartagena">Cartagena</option>
+                            <option value="Santa Marta">Santa Marta</option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Popayan">Popayan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>comentarios</td>
+                    <td><textarea name="comentarios" id="copmentarios" rows="5" cols="40" placeholder="escribe aqui tu comentario :3"></textarea></td>
+                </tr>
+             </table>
+             <br>
+             <table>
+                <tr>
+                    <td><input type="submit" value="enviar"></td>
+                    <td><input type="reset" value="limpiar"></td>
+                </tr>
+             </table>
+        </center>
+    </div>
+</body>
+</html>
